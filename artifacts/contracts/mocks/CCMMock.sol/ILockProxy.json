@@ -1,0 +1,127 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ILockProxy",
+  "sourceName": "contracts/mocks/CCMMock.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "_argsBs",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_fromContractAddr",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint64",
+          "name": "_fromChainId",
+          "type": "uint64"
+        }
+      ],
+      "name": "addExtension",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "_argsBs",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_fromContractAddr",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint64",
+          "name": "_fromChainId",
+          "type": "uint64"
+        }
+      ],
+      "name": "registerAsset",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "_argsBs",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_fromContractAddr",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint64",
+          "name": "_fromChainId",
+          "type": "uint64"
+        }
+      ],
+      "name": "removeExtension",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "_argsBs",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_fromContractAddr",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint64",
+          "name": "_fromChainId",
+          "type": "uint64"
+        }
+      ],
+      "name": "unlock",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

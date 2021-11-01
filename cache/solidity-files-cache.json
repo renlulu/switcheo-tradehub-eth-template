@@ -1,0 +1,975 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/BalanceReader.sol": {
+      "lastModificationDate": 1635768739099,
+      "contentHash": "673cda1ac1e48cbaae27fa0ed5fbfdba",
+      "sourceName": "contracts/BalanceReader.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./libs/token/ERC20/IERC20.sol",
+        "./libs/math/SafeMath.sol",
+        "./libs/utils/Utils.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "BalanceReader"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/libs/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1635768739107,
+      "contentHash": "108806e05552e6e6b8da283af9c455b2",
+      "sourceName": "contracts/libs/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/libs/math/SafeMath.sol": {
+      "lastModificationDate": 1635768739107,
+      "contentHash": "e26f4baf49c0dd2250fff6284bfe3301",
+      "sourceName": "contracts/libs/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/libs/utils/Utils.sol": {
+      "lastModificationDate": 1635768739111,
+      "contentHash": "520202372d103dfcfd18fd2643e8eecb",
+      "sourceName": "contracts/libs/utils/Utils.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Utils"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/mocks/CCMMock.sol": {
+      "lastModificationDate": 1635768739111,
+      "contentHash": "dd28f4f52e0098c08eebed10ab805786",
+      "sourceName": "contracts/mocks/CCMMock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libs/common/ZeroCopySink.sol",
+        "../libs/utils/Utils.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "CCMMock",
+        "ILockProxy"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/libs/common/ZeroCopySink.sol": {
+      "lastModificationDate": 1635768739103,
+      "contentHash": "58ead6a99680462b8701408e74434f4a",
+      "sourceName": "contracts/libs/common/ZeroCopySink.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ZeroCopySink"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/LockProxy.sol": {
+      "lastModificationDate": 1635768739099,
+      "contentHash": "90cc2c04b8ce749fa6a5294b41fdf649",
+      "sourceName": "contracts/LockProxy.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./libs/common/ZeroCopySource.sol",
+        "./libs/common/ZeroCopySink.sol",
+        "./libs/utils/ReentrancyGuard.sol",
+        "./libs/utils/Utils.sol",
+        "./libs/math/SafeMath.sol",
+        "./Wallet.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "CCM",
+        "CCMProxy",
+        "LockProxy"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/libs/common/ZeroCopySource.sol": {
+      "lastModificationDate": 1635768739103,
+      "contentHash": "1e4a55efad3daaabcc46d9cc46133d86",
+      "sourceName": "contracts/libs/common/ZeroCopySource.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ZeroCopySource"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/libs/utils/ReentrancyGuard.sol": {
+      "lastModificationDate": 1635768739111,
+      "contentHash": "0344cc17aba8075e07e2ae752cbb20c4",
+      "sourceName": "contracts/libs/utils/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/Wallet.sol": {
+      "lastModificationDate": 1635768739099,
+      "contentHash": "6f9b4418fe755937571319b826b3c3ac",
+      "sourceName": "contracts/Wallet.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./libs/utils/Utils.sol",
+        "./libs/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Wallet"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/libs/token/ERC777/ERC777.sol": {
+      "lastModificationDate": 1635768739111,
+      "contentHash": "2f995d8b5c2acd0bbf651efb9d8cc62a",
+      "sourceName": "contracts/libs/token/ERC777/ERC777.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../GSN/Context.sol",
+        "./IERC777.sol",
+        "./IERC777Recipient.sol",
+        "./IERC777Sender.sol",
+        "../../token/ERC20/IERC20.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol",
+        "../../introspection/IERC1820Registry.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ERC777"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/libs/GSN/Context.sol": {
+      "lastModificationDate": 1635768739099,
+      "contentHash": "219e250db2e376f31e67e243fe282cf4",
+      "sourceName": "contracts/libs/GSN/Context.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/libs/token/ERC777/IERC777.sol": {
+      "lastModificationDate": 1635768739111,
+      "contentHash": "3a0827b51ea8e0b8836d16f448069850",
+      "sourceName": "contracts/libs/token/ERC777/IERC777.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IERC777"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/libs/token/ERC777/IERC777Recipient.sol": {
+      "lastModificationDate": 1635768739111,
+      "contentHash": "f71f7aa91ec2027f2455c65b3afc0736",
+      "sourceName": "contracts/libs/token/ERC777/IERC777Recipient.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IERC777Recipient"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/libs/token/ERC777/IERC777Sender.sol": {
+      "lastModificationDate": 1635768739111,
+      "contentHash": "2b65059edfe9da90099bfadb81a8043d",
+      "sourceName": "contracts/libs/token/ERC777/IERC777Sender.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IERC777Sender"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/libs/utils/Address.sol": {
+      "lastModificationDate": 1635768739111,
+      "contentHash": "5806e86031df9d8f63dfb5284b533d46",
+      "sourceName": "contracts/libs/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/libs/introspection/IERC1820Registry.sol": {
+      "lastModificationDate": 1635768739103,
+      "contentHash": "a5022865a4ca0f894a073e425da47f0f",
+      "sourceName": "contracts/libs/introspection/IERC1820Registry.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IERC1820Registry"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/tokens/SwitcheoTokenHeco.sol": {
+      "lastModificationDate": 1635768739115,
+      "contentHash": "2f45b0f328e5987b5be1b99e98b9cd72",
+      "sourceName": "contracts/tokens/SwitcheoTokenHeco.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libs/token/ERC20/ERC20.sol",
+        "../libs/token/ERC20/ERC20Detailed.sol",
+        "../libs/ownership/Ownable.sol",
+        "../libs/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "SwitcheoTokenHeco"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/libs/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1635768739107,
+      "contentHash": "982ea34135836325e146ae7164259b78",
+      "sourceName": "contracts/libs/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "../../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/libs/token/ERC20/ERC20Detailed.sol": {
+      "lastModificationDate": 1635768739107,
+      "contentHash": "b2836054d3a11b80aaea7fa7f2b7c431",
+      "sourceName": "contracts/libs/token/ERC20/ERC20Detailed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ERC20Detailed"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/libs/ownership/Ownable.sol": {
+      "lastModificationDate": 1635768739107,
+      "contentHash": "c2fe79e8969f0b5b9374a360eb1430fd",
+      "sourceName": "contracts/libs/ownership/Ownable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../GSN/Context.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/tokens/SwitcheoTokenETH.sol": {
+      "lastModificationDate": 1635769922169,
+      "contentHash": "4940fc888bddef3578a20a5a6d53e168",
+      "sourceName": "contracts/tokens/SwitcheoTokenETH.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libs/token/ERC20/ERC20.sol",
+        "../libs/token/ERC20/ERC20Detailed.sol",
+        "../libs/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "SwitcheoToken"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/tokens/SwitcheoTokenBSC.sol": {
+      "lastModificationDate": 1635768739115,
+      "contentHash": "f88c420448f4878d786ae5703dc7811e",
+      "sourceName": "contracts/tokens/SwitcheoTokenBSC.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libs/token/ERC20/ERC20.sol",
+        "../libs/token/ERC20/ERC20Detailed.sol",
+        "../libs/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "SwitcheoTokenBSC"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/tokens/JRCoin.sol": {
+      "lastModificationDate": 1635768739111,
+      "contentHash": "b60bd70d2232f3a5bf5c0b2950abc586",
+      "sourceName": "contracts/tokens/JRCoin.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libs/token/ERC20/ERC20.sol",
+        "../libs/token/ERC20/ERC20Detailed.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "JRCoin"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/libs/cryptography/MerkleProof.sol": {
+      "lastModificationDate": 1635768739103,
+      "contentHash": "2b0fc5f746d99d53f33e692ec5a4c222",
+      "sourceName": "contracts/libs/cryptography/MerkleProof.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MerkleProof"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/Migrations.sol": {
+      "lastModificationDate": 1635768739099,
+      "contentHash": "69747f665e30454172c283d138054600",
+      "sourceName": "contracts/Migrations.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Migrations"
+      ]
+    },
+    "/home/xiaohuo/renlulu/switcheo-tradehub-eth/contracts/mocks/CCMProxyMock.sol": {
+      "lastModificationDate": 1635768739111,
+      "contentHash": "e0a9160a8174484de72aef1ffcc8e67d",
+      "sourceName": "contracts/mocks/CCMProxyMock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "CCMProxyMock"
+      ]
+    }
+  }
+}
